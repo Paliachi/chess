@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #82d4da8a;
+}
+
+.grid-container {
+    height: 640px;
+    width: 640px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-item {
+    align-items: center;
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+}
+
+.black-item {
+    background-color: black;
+}
+
+.white-item {
+    background-color: rgb(177, 199, 183);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+}
