@@ -1,6 +1,6 @@
-import { figures_addresses, insertStartingPositionsOfBlackFigures } from "./figures-starting-set.js";
+import { initBoard } from "./figures-starting-set.js";
 
-let itemArray = Array.from(document.querySelectorAll(".grid-item"));
+export let itemArray = Array.from(document.querySelectorAll(".grid-item"));
 
 function setColor() {
     let changeColor = false;
@@ -49,4 +49,5 @@ function setCoordinates () {
 
 setColor();
 setCoordinates();
-insertStartingPositionsOfBlackFigures(figures_addresses, itemArray);
+
+initBoard();
