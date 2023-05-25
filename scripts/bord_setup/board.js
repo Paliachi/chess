@@ -1,6 +1,6 @@
 import { initBoard } from "./figures-starting-set.js";
 
-export let itemArray = Array.from(document.querySelectorAll(".grid-item"));
+const root = document.getElementById('root');
 
 function setColor() {
     let changeColor = false;
@@ -11,28 +11,32 @@ function setColor() {
             changeColor = true;
         };
     };
+    for (let i = 0; i < 64; i++) {
+        let divElement = document.createElement("div");
+        divElement.classList.add("grid-item");
+        root.appendChild(divElement);
 
-    for (let i = 0; i < itemArray.length; i++) {
         if (i % 8 == 0 && i !== 0) {
             colorHandler(changeColor);
         };
         if (changeColor) {
             if (i % 2 == 0) {
-                itemArray[i].classList.add("black-item");
+                divElement.classList.add("black-item");
             } else {
-                itemArray[i].classList.add("white-item");
+                divElement.classList.add("white-item");
             };
         } else {
             if (i % 2 == 0) {
-                itemArray[i].classList.add("white-item");
+                divElement.classList.add("white-item");
             } else {
-                itemArray[i].classList.add("black-item");
+                divElement.classList.add("black-item");
             };
         };
     };
 };
 
 function setCoordinates () {
+    let itemArray = Array.from(document.querySelectorAll(".grid-item"));
     const rowArray = ["A", "B", "C", "D", "E", "F", "G", "H"];
     const columnArray = [8, 7, 6, 5, 4, 3, 2, 1];
     let loopNumberCoordinateCounter = 0;

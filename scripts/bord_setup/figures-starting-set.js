@@ -53,12 +53,8 @@ export const initBoard = () => {
             if(!!board[key][keyOfColumn].PATH) {
                 let img = document.createElement('img');
                 img.src = board[key][keyOfColumn].PATH;
-                console.log(board[key][keyOfColumn]);
                 cell.appendChild(img);
             }
         }); 
     });
-
-
-    // console.log(board);
 };

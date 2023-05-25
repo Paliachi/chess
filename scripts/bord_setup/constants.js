@@ -1,6 +1,6 @@
 export const FIGURES = {
     "W_ROOK": {ID: 1, PATH: "./images/rook-w.svg"},
-    "W_KNIGHT": {ID: 2, PATH: "./images/king-w.svg"},
+    "W_KNIGHT": {ID: 2, PATH: "./images/archbis-w.svg"},
     "W_BISHOP": {ID: 3, PATH: "./images/bishop-w.svg"},
     "W_QUEEN": {ID: 4, PATH: "./images/queen-white.svg"},
     "W_KING": {ID: 5, PATH: "./images/king-w.svg"},
@@ -13,12 +13,3 @@ export const FIGURES = {
     "B_PAWN": {ID: 12, PATH: "/images/pawn-b.svg"},
     "NONE": {ID: 0, PATH: ""}
 };
-
-
-
-//     "blackRook": "./images/rook-b.svg",
-//     "blackKnight": "/images/archbis-b.svg",
-//     "blackBishop": "/images/bishop-b.svg",
-//     "blackQueen": "/images/queen-black.svg",
-//     "blackKing": "/images/king-b.svg",
-//     "blackPawn": "/images/pawn-b.svg",
